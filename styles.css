@@ -39,6 +39,7 @@ p {
 .top-page h2 {
   color: #f8ebe7;
 }
+
 /*  עליי  */
 #profile-img {
   width: 180px;
@@ -102,7 +103,7 @@ hr {
   color: #f2c4bd;
 }
 
-/*  מסכים קטנים  */
+/*  לטלפונים ניידים   */
 @media (max-width: 600px) {
   h1 {
     font-size: 3.5rem;
@@ -116,4 +117,14 @@ hr {
     grid-template-columns: 1fr;
     width: 85%;
   }
+
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.top-page {
+  animation: fade-in 3s;
 }
